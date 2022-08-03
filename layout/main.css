@@ -17,7 +17,7 @@ body{
 
 .header{
     width: 100%;
-    height: 10vh;
+    height: 65px;
     background-color: rgb(237, 237, 237);
 }
 
@@ -49,8 +49,8 @@ body{
 }
 
 .item img{
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
 }
 
@@ -87,20 +87,24 @@ body{
 }
 
 ._left p{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: lighter;
     font-family: Montserrat-light;
 }
 
 ._left h3{
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
-._right p{
+._right #time{
     margin-top: 2px;
     margin-bottom: 2px;
-    font-size: 14px;
+    font-size: 12px;
     color: rgb(88, 88, 88);
+    background-color: antiquewhite;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 15px;
 }
 
 .item ._right{
@@ -112,24 +116,104 @@ body{
 }
 
 hr{
-    width: 90%;
+    width: 85%;
+    height: 0.5px;
+    border: none;
+    background-color: rgb(220, 220, 220);
 }
 
 .number{
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background-color: rgb(255, 107, 107);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2px;
+    margin-top: 8px;
     margin-bottom: 2px;
 }
 
 .number p{
     margin: 2px;
+    font-size: 12px;
+    font-weight: bold;
     color: aliceblue;
+}
+
+.right{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.messagebody{
+    width: 100%;
+    max-height: 87%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 10px;
+    margin-top: 5px;
+    font-family: Montserrat-light;
+    overflow-y: scroll;
+    line-height: 25px;
+    margin-bottom: 5px;
+}
+
+.messagebody .sent{
+    max-width: 60%;
+    background-color: aliceblue;
+    align-self: flex-end;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 13px;
+}
+
+.messagebody .received{
+    max-width: 60%;
+    background-color: rgb(248, 243, 204);
+    align-self: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 13px;
+}
+.right .chat{
+    width: 100%;
+    height: 8%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.chat textarea{
+    align-self: flex-end;
+    width: 95%;
+    resize: none;
+    border: 1px rgb(187, 187, 187) solid;
+    border-radius: 15px;
+    font-family: Montserrat-light;
+    padding-left: 10px;
+    padding-top: 5px;
+    
+}
+
+::placeholder{
+    padding-top: 15px;
+    padding-left: 10px;
 }
 
 
