@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('../assets/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-light;
+    src: url('../assets/Montserrat-Light.ttf');
+}
+
+body{
+    font-family: Montserrat;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(237, 237, 237);
+}
+
+.header h2{
+    margin-left: 20px;
+}
+
+.header h2 span{
+    color: red;
+}
+
+.mainpanel{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.mainpanel .left{
+    width: 30%;
+    height: 100%;
+    border-right: rgb(190, 190, 190) 1px solid;
+}
+
+.mainpanel .right{
+    width: 70%;
+    height: 100%;
+    
+}
+
+.item img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-top: 5px;
+    padding-left: 1em;
+    padding-right: 0.8em;
+    height: 60px;
+}
+
+.messageitem{
+    display: flex;
+    flex-direction: row;
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.item ._left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+._left p, h3{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: rgb(88, 88, 88);
+}
+
+._left p{
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: Montserrat-light;
+}
+
+._left h3{
+    font-size: 1.1em;
+}
+
+._right p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 14px;
+    color: rgb(88, 88, 88);
+}
+
+.item ._right{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+hr{
+    width: 90%;
+}
+
+.number{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 107, 107);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.number p{
+    margin: 2px;
+    color: aliceblue;
+}
+
+
+
